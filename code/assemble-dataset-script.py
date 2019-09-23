@@ -12,7 +12,7 @@ for lang, data in answers_tmp.iteritems():
             if not kg in answers[qid]:
                 answers[qid][kg] = {}
             if not lang in answers[qid][kg]:
-                answers[qid][kg] = {}
+                answers[qid][kg][lang] = []
             answers[qid][kg][lang] = val
 
 queries = {}
